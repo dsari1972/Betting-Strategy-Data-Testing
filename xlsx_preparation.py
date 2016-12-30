@@ -33,7 +33,5 @@ for i in range(2007,2004,-1):
 
 
 
-	wb.SaveAs(True, r'C:\Users\Konstantinos\Documents\GIT\Python Projects\OU Line Data Testing\files\all-euro-data-%d-%d-FIXED.xls' % (i, i+1), FileFormat=win32.constants.xlOpenXMLWorkbook)		# FileFormat is needed to convert file to .xlsx
-	# Choose one
-	#excel.Application.Quit()
-	#wb.Close(True, r'C:\Path\to\folder\Test.xlsx')
+	wb.SaveAs(r'C:\Users\Konstantinos\Documents\GIT\Python Projects\OU Line Data Testing\files\all-euro-data-%d-%d-FIXED.xlsx' % (i, i+1), FileFormat=win32.constants.xlOpenXMLWorkbook)		# FileFormat is needed to convert file to .xlsx
+	excel.Application.Quit()
